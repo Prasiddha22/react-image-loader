@@ -65,7 +65,12 @@ export const ImageLoader = ({
 
   return (
     <>
-      <ShimmerComponent loadType={loadType} isLoaded={isLoaded} style={style} />
+      <ShimmerComponent
+        loadType={loadType}
+        isLoaded={isLoaded}
+        style={style}
+        className={className}
+      />
       <CustomComponent
         isLoaded={isLoaded}
         loadType={loadType}
@@ -97,12 +102,14 @@ type ShimmerComponentProps = {
   loadType: string;
   isLoaded: boolean;
   style: React.CSSProperties;
+  className: string;
 };
 
 const ShimmerComponent = ({
   loadType,
   isLoaded,
   style,
+  className,
 }: ShimmerComponentProps) => {
   return (
     <div
@@ -111,7 +118,7 @@ const ShimmerComponent = ({
           loadType === 'shimmer' ? (isLoaded ? 'none' : 'block') : 'none',
         ...style,
       }}
-      className="shine"
+      className={`shine ${className}`}
     ></div>
   );
 };
