@@ -24,8 +24,6 @@ type Props = {
   className?: string;
   loadType?: 'placeholder' | 'shimmer' | 'custom';
   placeholderImage?: string;
-  shimmerLinerarGradient?: string;
-  shimmerAnimationDelay?: number;
   customComponent?: React.ReactNode;
 };
 
@@ -35,8 +33,6 @@ export const ImageLoader = ({
   style = { maxWidth: '100%', height: '30vh' },
   className = '',
   loadType = 'shimmer',
-  shimmerLinerarGradient = '',
-  shimmerAnimationDelay = 1.5,
   customComponent = customComponentTemplate,
   placeholderImage = '',
 }: Props) => {
@@ -71,13 +67,7 @@ export const ImageLoader = ({
 
   return (
     <>
-      <ShimmerComponent
-        loadType={loadType}
-        isLoaded={isLoaded}
-        shimmerLinerarGradient={shimmerLinerarGradient}
-        shimmerAnimationDelay={shimmerAnimationDelay}
-        style={style}
-      />
+      <ShimmerComponent loadType={loadType} isLoaded={isLoaded} style={style} />
       <CustomComponent
         isLoaded={isLoaded}
         loadType={loadType}
@@ -108,16 +98,12 @@ export const ImageLoader = ({
 type ShimmerComponentProps = {
   loadType: string;
   isLoaded: boolean;
-  shimmerLinerarGradient: string;
-  shimmerAnimationDelay: number;
   style: React.CSSProperties;
 };
 
 const ShimmerComponent = ({
   loadType,
   isLoaded,
-  shimmerLinerarGradient,
-  shimmerAnimationDelay,
   style,
 }: ShimmerComponentProps) => {
   return (
@@ -125,11 +111,6 @@ const ShimmerComponent = ({
       style={{
         display:
           loadType === 'shimmer' ? (isLoaded ? 'none' : 'block') : 'none',
-        backgroundImage:
-          shimmerLinerarGradient !== ''
-            ? shimmerLinerarGradient
-            : `linear-gradient(to right, #f6f7f8 0%, #ececec 20%, #f6f7f8 40%, #f6f7f8 100%)`,
-        animationDuration: `${shimmerAnimationDelay}s`,
         ...style,
       }}
       className="shine"

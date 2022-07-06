@@ -1,26 +1,13 @@
-/* Shimmer */
 .shine {
-    background: #f6f7f8;
-    background-size: 1000px 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeholderShimmer;
-    animation-timing-function: linear;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: placeholderShimmer;
-    -webkit-animation-timing-function: linear;
+    animation: skeleton-loading 1s linear infinite alternate;
 }
 
-@keyframes placeholderShimmer {
+@keyframes skeleton-loading {
     0% {
-        background-position: -1000px 0;
+        background-color: hsl(200, 20%, 80%);
     }
 
     100% {
-        background-position: 1000px 0;
+        background-color: hsl(200, 20%, 95%);
     }
 }
