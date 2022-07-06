@@ -55,9 +55,7 @@ export const ImageLoader = ({
     var img = new Image();
     img.src = src;
     img.onload = () => {
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 2000);
+      setIsLoaded(true);
     };
   }, [src, loadType, placeholderImage]);
 
