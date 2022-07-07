@@ -1,1 +1,64 @@
-{"version":"0.1.0","license":"MIT","main":"dist/index.js","typings":"dist/index.d.ts","files":["dist","src"],"engines":{"node":">=10"},"scripts":{"start":"tsdx watch","build":"tsdx build","test":"tsdx test --passWithNoTests","lint":"tsdx lint","prepare":"tsdx build","size":"size-limit","analyze":"size-limit --why"},"peerDependencies":{"react":"^18.2.0"},"husky":{"hooks":{"pre-commit":"tsdx lint"}},"prettier":{"printWidth":80,"semi":true,"singleQuote":true,"trailingComma":"es5"},"name":"react-image-loader","author":"prasiddha22","module":"dist/react-image-loader.esm.js","size-limit":[{"path":"dist/react-image-loader.cjs.production.min.js","limit":"10 KB"},{"path":"dist/react-image-loader.esm.js","limit":"10 KB"}],"devDependencies":{"@size-limit/preset-small-lib":"^7.0.8","@types/react":"^18.0.14","@types/react-dom":"^18.0.6","husky":"^8.0.1","react":"*","react-dom":"^18.2.0","size-limit":"^7.0.8","tsdx":"^0.14.1","tslib":"^2.4.0","typescript":"^3.9.10"}}
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "rollup -c",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "react-image-loader",
+  "author": "prasiddha22",
+  "module": "dist/react-image-loader.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-image-loader.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-image-loader.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.6",
+    "autoprefixer": "^10.4.7",
+    "husky": "^8.0.1",
+    "react": "*",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^3.9.10"
+  }
+}
