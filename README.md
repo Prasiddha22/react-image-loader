@@ -2,6 +2,8 @@
 
 @prasiddha/react-image-loader allows you to show a shimmer/skeleton, placeholder image or your custom component until image is loaded in the browser.
 
+#### Even if your image src changes dynamically then this package will again show the loading component until new image source is full loaded.
+
 ## Installation
 
 Use the package manager [npm](https://nodejs.org/en/) to install @prasiddha/react-image-loader.
