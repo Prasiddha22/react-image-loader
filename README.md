@@ -58,7 +58,7 @@ export default App;
 
 #### If you are using the placeholder load type, then it provides you the option to specify which image you want to put as a placeholder image until the actual image loads.
 
-Note: It you do not specify the placeholderImage, it uses the default placeholder image specified already in the package.
+Note: If you do not specify the placeholderImage, it uses the default placeholder image specified already in the package.
 
 ### Custom
 
@@ -86,7 +86,7 @@ export default App;
 
 #### If you are using the custom load type, then it provides you the option to specify your own component to load until the actual image loads.
 
-Note: It you do not specify the customComponent, it uses the default component specified already in the package.
+Note: If you do not specify the customComponent, it uses the default component specified already in the package.
 
 ## Props
 
