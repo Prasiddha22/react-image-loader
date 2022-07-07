@@ -90,15 +90,15 @@ Note: It you do not specify the customComponent, it uses the default component s
 
 ## Props
 
-| Property                                          | Required | Default value                        | Description                                                                                                              |
-| :------------------------------------------------ | :------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| `src: string`                                     | yes      |                                      |
-| `alt: string`                                     | yes      |                                      |
-| `loadType?: 'placeholder' | 'shimmer' | 'custom'` | yes      | 'shimmer'                            | Provide load type to display until actual image is loaded                                                                |
-| `style?: React.CSSProperties`                     | no       | { maxWidth: '100%', height: '30vh' } | Provide style for images as well as the loading component for all load types                                             |
-| `className?: string`                              | no       |                                      | Provide class name for the images as well as the loading component for all load types                                    |
-| `placeholderImage?: string`                       | no       | default specified image              | Provide placeholder image until actual image is loaded. This props is only in effect if `loadType = "placeholder"`       |
-| `customComponent?: React.ReactNode`               | no       | default specified component          | Provide placeholder custom component until actual image is loaded. This props is only in effect if `loadType = "custom"` |
+| Property                                                    | Required | Default value                        | Description                                                                                                              |
+| :---------------------------------------------------------- | :------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| `src: string`                                               | yes      |                                      |
+| `alt: string`                                               | yes      |                                      |
+| `loadType?: 'placeholder' &#124; 'shimmer' &#124; 'custom'` | yes      | 'shimmer'                            | Provide load type to display until actual image is loaded                                                                |
+| `style?: React.CSSProperties`                               | no       | { maxWidth: '100%', height: '30vh' } | Provide style for images as well as the loading component for all load types                                             |
+| `className?: string`                                        | no       |                                      | Provide class name for the images as well as the loading component for all load types                                    |
+| `placeholderImage?: string`                                 | no       | default specified image              | Provide placeholder image until actual image is loaded. This props is only in effect if `loadType = "placeholder"`       |
+| `customComponent?: React.ReactNode`                         | no       | default specified component          | Provide placeholder custom component until actual image is loaded. This props is only in effect if `loadType = "custom"` |
 
 ###
 
