@@ -16,6 +16,8 @@ With @prasiddha/react-image-loader you can pass props to display either shimmer/
 
 ### Shimmer
 
+![GIF showing usages with shimmer load type](https://github.com/Prasiddha22/react-image-loader/blob/main/media/shimmer.gif?raw=true)
+
 ```tsx
 import { ImageLoader } from '@prasiddha/react-image-loader';
 
@@ -36,6 +38,8 @@ export default App;
 #### If you are using the shimmer effect, a beautiful shimmer/skeleton is loaded until the actual image is loaded in you app.
 
 ### Placeholder
+
+![GIF showing usages with shimmer load type](https://github.com/Prasiddha22/react-image-loader/blob/main/media/placeholder.gif?raw=true)
 
 ```tsx
 import { ImageLoader } from '@prasiddha/react-image-loader';
@@ -61,6 +65,8 @@ export default App;
 Note: If you do not specify the placeholderImage, it uses the default placeholder image specified already in the package.
 
 ### Custom
+
+![GIF showing usages with shimmer load type](https://github.com/Prasiddha22/react-image-loader/blob/main/media/custom.gif?raw=true)
 
 ```tsx
 import { ImageLoader } from '@prasiddha/react-image-loader';
@@ -90,15 +96,15 @@ Note: If you do not specify the customComponent, it uses the default component s
 
 ## Props
 
-| Property                                                               | Required | Default value                        | Description                                                                                                              |
-| :--------------------------------------------------------------------- | :------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| `src: string`                                                          | yes      |                                      |
-| `alt: string`                                                          | yes      |                                      |
-| <code>loadType?: 'placeholder' &#124; 'shimmer' &#124; 'custom'</code> | yes      | 'shimmer'                            | Provide load type to display until actual image is loaded                                                                |
-| `style?: React.CSSProperties`                                          | no       | { maxWidth: '100%', height: '30vh' } | Provide style for images as well as the loading component for all load types                                             |
-| `className?: string`                                                   | no       |                                      | Provide class name for the images as well as the loading component for all load types                                    |
-| `placeholderImage?: string`                                            | no       | default specified image              | Provide placeholder image until actual image is loaded. This props is only in effect if `loadType = "placeholder"`       |
-| `customComponent?: React.ReactNode`                                    | no       | default specified component          | Provide placeholder custom component until actual image is loaded. This props is only in effect if `loadType = "custom"` |
+| Property                            | Required  | Default value                        | Description                                                                                                              |
+| :---------------------------------- | :-------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| `src: string`                       | yes       |                                      |
+| `alt: string`                       | yes       |                                      |
+| <code>loadType?: 'placeholder'      | 'shimmer' | 'custom'</code>                      | yes                                                                                                                      | 'shimmer' | Provide load type to display until actual image is loaded |
+| `style?: React.CSSProperties`       | no        | { maxWidth: '100%', height: '30vh' } | Provide style for images as well as the loading component for all load types                                             |
+| `className?: string`                | no        |                                      | Provide class name for the images as well as the loading component for all load types                                    |
+| `placeholderImage?: string`         | no        | default specified image              | Provide placeholder image until actual image is loaded. This props is only in effect if `loadType = "placeholder"`       |
+| `customComponent?: React.ReactNode` | no        | default specified component          | Provide placeholder custom component until actual image is loaded. This props is only in effect if `loadType = "custom"` |
 
 ###
 
