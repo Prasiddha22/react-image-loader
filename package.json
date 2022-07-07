@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@prasiddha22/react-image-loader",
+  "name": "@prasiddha/react-image-loader",
   "author": "prasiddha22",
   "module": "dist/react-image-loader.esm.js",
   "size-limit": [
